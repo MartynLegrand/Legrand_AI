@@ -1,0 +1,89 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1e1e1e;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Panel styles */
+.panel {
+  background-color: #252525;
+  border: 1px solid #3e3e3e;
+  overflow: auto;
+}
+
+/* Button styles */
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: #0078d4;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #106ebe;
+}
+
+.btn-secondary {
+  background-color: #3e3e3e;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #4e4e4e;
+}
+
+.btn-danger {
+  background-color: #e81123;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c50f1f;
+}
+
+/* Input styles */
+.input {
+  padding: 6px 12px;
+  background-color: #1e1e1e;
+  border: 1px solid #3e3e3e;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0078d4;
+}
+
+/* Status indicator */
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.status-connected {
+  background-color: #10b981;
+}
+
+.status-disconnected {
+  background-color: #ef4444;
+}
