@@ -96,6 +96,7 @@ Legrand_AI/
 - No data is sent to any server except OpenAI's API
 - Conversation history is kept in memory and cleared on page reload
 - Open source and transparent - review the code yourself
+- See [SECURITY.md](SECURITY.md) for detailed security information and best practices
 
 ## API Usage & Costs
 
