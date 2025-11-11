@@ -58,6 +58,9 @@ class LegrandAI {
         });
 
         // API Key input
+        // Note: Storing API key in localStorage is intentional for this client-side only MVP
+        // Users are informed in the UI that keys are stored locally
+        // For production apps, consider using a backend proxy to avoid exposing API keys
         document.getElementById('api-key').addEventListener('change', (e) => {
             this.apiKey = e.target.value;
             localStorage.setItem('openai_api_key', this.apiKey);
