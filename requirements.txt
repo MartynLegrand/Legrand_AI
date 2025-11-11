@@ -1,0 +1,9 @@
+# Legrand AI TODO Application Dependencies
+# Python 3.7+ required
+
+# No external dependencies required for core functionality
+# The application uses only Python standard library
+
+# Development dependencies (optional)
+# pytest>=7.0.0  # For running tests
+# pytest-cov>=4.0.0  # For test coverage reports
