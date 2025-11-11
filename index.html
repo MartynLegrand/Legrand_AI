@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legrand 3D - AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Legrand AI Assistant</h1>
+            <p class="subtitle">Your 3D Interactive AI Companion</p>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- 3D Avatar Container -->
+            <div class="avatar-container">
+                <div id="avatar-canvas"></div>
+                <div class="avatar-status">
+                    <span class="status-indicator"></span>
+                    <span class="status-text">Ready</span>
+                </div>
+            </div>
+
+            <!-- Chat Interface -->
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2>Chat</h2>
+                    <div class="chat-controls">
+                        <button id="voice-btn" class="control-btn" title="Voice Input">
+                            <span class="icon">🎤</span>
+                        </button>
+                        <button id="clear-btn" class="control-btn" title="Clear Chat">
+                            <span class="icon">🗑️</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="chat-messages" class="chat-messages">
+                    <div class="message assistant-message">
+                        <div class="message-content">
+                            <p>Hello! I'm Legrand, your 3D AI assistant. How can I help you today?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <input 
+                        type="text" 
+                        id="chat-input" 
+                        class="chat-input" 
+                        placeholder="Type your message..."
+                        autocomplete="off"
+                    >
+                    <button id="send-btn" class="send-btn">
+                        <span class="icon">➤</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings Panel -->
+        <div class="settings-panel">
+            <button id="settings-toggle" class="settings-toggle">⚙️</button>
+            <div id="settings-content" class="settings-content hidden">
+                <h3>Settings</h3>
+                <div class="setting-item">
+                    <label for="api-key">OpenAI API Key:</label>
+                    <input type="password" id="api-key" placeholder="sk-..." />
+                    <small>Your API key is stored locally and never sent to our servers.</small>
+                </div>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="voice-enabled" checked />
+                        Enable Voice Interaction
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="avatar-animations" checked />
+                        Enable Avatar Animations
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
